@@ -1,0 +1,99 @@
+
+@media (max-width:1300px) {
+    .home-hero__text{
+        font-size: 1.2rem;
+    }
+    .home-hero__info button{
+        padding: 10px 70px; 
+        font-size: 1rem;
+    }
+}
+@media (max-width:1091px) {
+    .heading-primary{
+        font-size: 2.5rem;
+    }
+    .home-hero__text{
+        font-size: 1rem;
+    }
+    .home-hero__icons{
+        font-size: 3rem;
+        padding: 8px;
+    }
+    .home-hero__info button{
+        padding: 10px 50px; 
+        font-size: 1rem;
+    }
+
+
+}
+@media (max-width:854px) {
+    .heading-sec__sub{
+        line-height: 15px;
+        font-size: 0.8rem;
+        width: 80%;
+        margin-top: 1.5rem;
+    }
+    .heading-primary{
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+    }
+    .home-hero__text{
+        font-size: 0.7rem;
+        display: none;
+    }
+    .home-hero__text.two{
+        display: block;
+    }
+    .home-hero__icons{
+        font-size:2.5rem;
+        padding: 6px;
+    }
+    .home-hero__info button{
+        padding: 8px 40px; 
+        font-size: 0.8rem;
+    }
+    .home-hero{
+        height:90vh;
+    }
+    .home-hero__mouse-scroll{
+        display: none;
+    }
+    .header__logo-text{
+        font-size: 1.4rem;
+    }
+    .header__img-div{
+        height: 40px;
+        width: 40px;
+    }
+    .sec-pad{
+        padding: 6rem 0;
+    }
+    .heading-sec__main{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .contact__form{
+        padding: 2rem;
+    }
+}
+@media (max-width:600px) {
+    .home-hero{
+        height:70vh;
+    }
+    .heading-sec__sub{
+        line-height: 15px;
+        font-size: 0.8rem;
+        width: 80%;
+    }
+    .home-hero__icons{
+        font-size:1.8rem;
+        padding: 4px;
+    }
+    .about__div-skills{
+        /* margin: auto; */
+        width: 90%;
+    }
+    .about__skills-title{
+        margin-top: 5rem;
+    }
+}

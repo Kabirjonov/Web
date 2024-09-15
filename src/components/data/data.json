@@ -1,0 +1,86 @@
+{
+    "Skills": [
+        {
+            "id": 1,
+            "name": "HTML"
+        },
+        {
+            "id": 2,
+            "name": "CSS"
+        },
+        {
+            "id": 3,
+            "name": "Bootstrap"
+        },
+        {
+            "id": 4,
+            "name": "JavaScript"
+        },
+        {
+            "id": 5,
+            "name": "React"
+        },
+        {
+            "id": 6,
+            "name": "Node JS"
+        },
+        {
+            "id": 7,
+            "name": "Sass"
+        },
+        {
+            "id": 8,
+            "name": "Git"
+        },
+        {
+            "id": 9,
+            "name": "Github"
+        },
+        {
+            "id": 10,
+            "name": "Responsive Design"
+        },
+        {
+            "id": 11,
+            "name": "Mongodb"
+        }
+    ],
+    "Projects": [
+        {
+            "id": 1,
+            "image": "laptop.jpg",
+            "title": "Dopefolio",
+            "description": "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally",
+            "link":"",
+            "buttonTitle":"Case Study"
+        },
+        {
+            "id": 2,
+            "image": "laptop.jpg",
+            "title": "Books shop",
+            "description": "Dopefolio is a successful Open-Source project that I created which have been featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers globally",
+            "link":"",
+            "buttonTitle":"Link Book"
+        }
+    ],
+    "Navbar":[
+        {
+            "title":"home",
+            "id":1
+
+        },
+        {
+            "title":"about",
+            "id":2
+        },
+        {
+            "title":"project",
+            "id":3
+        },
+        {
+            "title":"contact",
+            "id":4
+        }
+    ]
+
+}
