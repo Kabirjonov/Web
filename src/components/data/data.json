@@ -43,6 +43,18 @@
         {
             "id": 11,
             "name": "Mongodb"
+        },
+        {
+            "id": 11,
+            "name": "English A2"
+        },
+        {
+            "id": 11,
+            "name": "Russian B2"
+        },
+        {
+            "id": 11,
+            "name": "Uzbek C2"
         }
     ],
     "Projects": [

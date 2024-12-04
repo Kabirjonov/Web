@@ -3,7 +3,10 @@
     background:  linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url('../Images/Screenshoot.png');
     position: relative;
 }
-
+.Information_OF_PROFILE{
+    margin: 0;
+    padding: 0 !important; 
+}
 .home-hero__content{
     position: absolute;
     top:30%;
@@ -78,8 +81,45 @@
     height: 55px;
     z-index: 5;
 }
-
-
+/* hidden_profile start */
+.hidden_profile{
+    position: fixed;
+    top: 100px;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.close_hiddenProfile{
+    position: absolute;
+    top: 0%;
+    right: 0% ;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 40px;
+    z-index: 999;
+    background: #fff;
+    transition: 0.3s;
+}
+.close_hiddenProfile:hover{
+    background: red;
+    color: #fff;
+}
+/* hidden profile chiqish animation */
+.hidden_profile {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.3s ease-in-out; /* Animatsiya uchun transition qo'shildi */
+    visibility: hidden;
+  }
+  
+  .hidden_profile.show-profile {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+  
 /*  */
 .mouse{
     background:var(--grey) !important;

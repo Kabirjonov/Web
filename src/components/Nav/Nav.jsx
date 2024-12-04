@@ -6,8 +6,12 @@ import Logo_img from "../Images/LogoNav.jpg";
 import "./Nav.css";
 import { Link } from "react-scroll";
 import data from "../data/data.json";
-import React from "react";
+import React,{useContext}from "react";
+import ProfileContext  from '../Home/ProfileContext'
+
 const BasicNav = (props) => {
+  const {show,setShow} = useContext(ProfileContext)
+
   return (
     <section id="home">
       <Navbar expand="md" className="header">
@@ -17,10 +21,10 @@ const BasicNav = (props) => {
             className="header__logo d-flex align-items-center m-2"
           >
             <div className="header__img-div">
-              <img src={Logo_img} alt="" className="header__logo-img " />
+              <img src={Logo_img} onClick={()=>setShow(!show)} alt="" className="header__logo-img " />
             </div>
             <h2 className="header__logo-text">
-              <Link smooth className="d-flex grey01" spy to="home">
+              <Link  className="d-flex grey01" spy to="home">
                 Kabirjonov O
               </Link>
             </h2>
@@ -34,7 +38,6 @@ const BasicNav = (props) => {
                   className="nav__link"
                   duration={500}
                   defaultChecked
-                  smooth
                   spy
                   to={item.title}
                 >

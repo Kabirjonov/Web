@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useContext } from "react";
 import "./Home.css";
 import { FaLinkedin, FaTelegram } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -6,30 +6,16 @@ import { FaInstagramSquare } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoBook } from "react-icons/io5";
 import { Link } from "react-scroll";
+import ProfileContext  from './ProfileContext'
+import Profile from "./Profile";
+
 const Home = () => {
-  const toggle = true;
+  const {show,setShow} = useContext(ProfileContext)
 
   return (
     <>
+    <Profile/>
       <section className="home-hero">
-        {/* <div className="row hidden_profile">
-          <div className="col-lg-6 profile-img">
-            <img src={require("../Images/LogoNav.jpg")} alt="Logo Img" />
-          </div>
-          <div className="col-lg-6 profile-text">
-            <h2>Kabirjonov Oxunjon</h2>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
-              libero, error quia blanditiis, facere inventore natus delectus
-              fuga ullam culpa tempore esse, dignissimos veritatis officiis
-              asperiores autem. Dolor, doloribus odit?
-            </p>
-            <ul>
-              <li>Born: 08.04.2005</li>
-              <li></li>
-            </ul>
-          </div>
-        </div> */}
         <div className="home-hero__content text-center">
           <h1 className="heading-primary">Hey, I'm Kabirjonov Oxunjon</h1>
           <div className="home-hero__info">
@@ -40,33 +26,45 @@ const Home = () => {
             <p className="home-hero__text two">
               Asallom alekum, This web site you know for me
             </p>
-            <Link smooth spy to="project">
+            <Link spy to="contact">
               <button className="EveryoneBtn">Projects</button>
             </Link>
           </div>
         </div>
         <div className="home-hero__socials">
           <div className="home-hero__div">
-            <a href="https://t.me/kabirjonov_0">
+            <a
+              href="https://t.me/kabirjonov_0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaTelegram className="home-hero__icons" />
             </a>
           </div>
           <div className="home-hero__div">
-            <a href="https://github.com/Kab1rjonov">
+            <a
+              href="https://github.com/Kabirjonov"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaGithub className="home-hero__icons" />
             </a>
           </div>
           <div className="home-hero__div">
-            <a href="https://www.instagram.com/kab1rjonov_o/">
+            <a
+              href="https://www.instagram.com/kab1rjonov_o/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FaInstagramSquare className="home-hero__icons" />
             </a>
           </div>
-          <div className="home-hero__div">
-            <FaLinkedin className="home-hero__icons" />
-          </div>
 
           <div className="home-hero__div">
-            <IoBook className="home-hero__icons" />
+            <IoBook
+              className="home-hero__icons"
+              onClick={()=>setShow(!show)} // Holatni boshqarish
+            />
           </div>
         </div>
         <div className="home-hero__mouse-scroll">
@@ -76,4 +74,5 @@ const Home = () => {
     </>
   );
 };
+
 export default Home;

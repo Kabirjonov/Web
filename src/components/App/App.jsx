@@ -7,19 +7,19 @@ import Projects from '../Projects/Projects'
 import Contact from '../Contact/Contact'
 import Footer from '../Footer/Footer'
 import './madia.css'
+import { ProfileProvider, } from '../Home/ProfileContext'
 
+const App = () => {
 
-const App = ()=> {
- 
   return (
-    <div className='App'>
-      <Nav />
-      <Home/>
-      <About/>
-      <Projects/>
-      <Contact/>
-      <Footer/>
-    </div>
+    <ProfileProvider>
+        <Nav />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+        <Footer />
+    </ProfileProvider>
   )
-} 
+}
 export default App

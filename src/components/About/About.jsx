@@ -36,11 +36,19 @@ const About = () => {
               other people of the Dev Community. Feel free to Connect or Follow
               me on my{" "}
               <span className="shref-bold LinkFordirect">
-                <a href="">Linkedin</a>
+              <a
+              href="https://t.me/kabirjonov_0"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Telegram</a>
               </span>{" "}
               and{" "}
               <span className="shref-bold LinkFordirect">
-                <a href="https://www.instagram.com/">Instagram</a>
+              <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Instagram</a>
               </span>{" "}
               where I post useful content related to Web Development and
               Programming{" "}
@@ -51,7 +59,7 @@ const About = () => {
               opportunity that matches my skills and experience then don't
               hesitate to <span className="shref-bold">contact</span> me.{" "}
             </p>
-            <Link smooth spy to='contact'>
+            <Link  spy to='contact'>
                 <button className='EveryoneBtn' data-aos="fade-up" data-aos-duration="1000">Contact</button>
                 </Link>
 
