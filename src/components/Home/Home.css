@@ -1,0 +1,159 @@
+.home-hero{
+    height: 110vh;
+    background:  linear-gradient(to right, rgba(245,245,245,0.8), rgba(245,245,245,0.8)),url('../Images/Screenshoot.png');
+    position: relative;
+}
+.Information_OF_PROFILE{
+    margin: 0;
+    padding: 0 !important; 
+}
+.home-hero__content{
+    position: absolute;
+    top:30%;
+    left: 25%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+.heading-primary{
+    font-weight: 8080;
+    cursor: pointer;
+    color: var(--black);
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-size: 3.3rem;
+    font-weight: 900;
+}
+.home-hero__info{
+    width: 80%;
+    margin: auto;
+}
+.home-hero__text{
+    margin-top: 15px;
+    color: var(--grey) !important;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 100%;
+    line-height: 1.5;
+}
+.home-hero__text.two{
+    display: none;
+}
+.home-hero__info button{
+    padding: 10px 80px; 
+    font-size: 1.3rem;
+}
+/* home-hero__socials start */
+.home-hero__socials{
+    position: absolute;
+    left: 0;
+    top: 30%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 29px 0px 100px 30px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 5px;
+}
+.home-hero__div{
+    border-radius: 5px;
+}
+.home-hero__div:hover{
+    background: #7843e961;
+}
+.home-hero__div a{
+    color: var(--grey) !important;  
+    text-decoration: none !important;
+}
+.home-hero__icons{
+    padding: 10px;   
+    font-size: 3.7rem;
+}
+/* home-hero__socials || link icon left div end */
+.home-hero__mouse-scroll{
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    border: 1px solid var(--grey) !important;
+    border-radius: 20px;
+    width: 30px;
+    height: 55px;
+    z-index: 5;
+}
+/* hidden_profile start */
+.hidden_profile{
+    position: fixed;
+    top: 100px;
+    left: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.close_hiddenProfile{
+    position: absolute;
+    top: 0%;
+    right: 0% ;
+    cursor: pointer;
+    padding: 2px;
+    font-size: 40px;
+    z-index: 999;
+    background: #fff;
+    transition: 0.3s;
+}
+.close_hiddenProfile:hover{
+    background: red;
+    color: #fff;
+}
+/* hidden profile chiqish animation */
+.hidden_profile {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.3s ease-in-out; /* Animatsiya uchun transition qo'shildi */
+    visibility: hidden;
+  }
+  
+  .hidden_profile.show-profile {
+    opacity: 1;
+    transform: translateX(0);
+    visibility: visible;
+  }
+  
+/*  */
+.mouse{
+    background:var(--grey) !important;
+    border-radius: 50%;
+    width: 7px;
+    height:7px;
+    position: absolute;
+    top: 20%;
+    left: 38%;
+    animation: mouse 1s infinite;
+    opacity: 0;
+}
+@keyframes mouse{
+    10%{
+        opacity: 0.5;
+    }
+    35%{
+        /* opacity: 0.3; */
+    }
+    45%{
+        /* opacity: 0.7; */
+    }
+    55%{
+        opacity: 1;
+    }
+    70%{
+        /* opacity: 0.5; */
+    }
+    90%{
+        /* top: 70%; */
+        /* opacity: 0; */
+    }
+    100%{
+        opacity: 0;
+        top:70%;
+    }
+  }

@@ -1,0 +1,59 @@
+.about{
+    background: var(--half);
+}
+.about__heading{
+    margin-top: 4vw !important;
+}
+.about__skills-title{
+    color: var(--black);
+    font-weight: 700;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+}
+.colForleft p{
+    color: var(--grey01);
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+.colForleft .shref-bold{
+    font-weight: 710 !important;
+    color: var(--grey01);
+
+}
+.colForleft .LinkFordirect{
+    color: var(--pink);
+    font-weight: 600 !important;
+    text-decoration: dashed !important;
+}
+.colForleft button{
+    padding: 15px 2.7rem; 
+    font-size: 0.9rem;
+    font-weight: 800;
+    margin-top: 20px;
+    margin-bottom: 2rem;
+}
+/* my skills blog start */
+.colForleft h2{
+    font-weight: 700;
+    color: var(--black);
+    font-size: 2rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.about__div-skills{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    cursor: pointer;
+}
+.about__div-skills .about__skill{
+    padding: 0.7rem 1.4rem;
+    background: rgba(153,153,153,0.2);
+    margin-right:  10px;
+    margin-top: 10px;
+    color: #666;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+}

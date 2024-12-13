@@ -1,0 +1,28 @@
+.project__blog{
+    margin-top: 5rem !important; 
+}
+.projects__images{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.projects__images img{
+    width: 100%;
+}
+.ProjectRight{
+    padding: 2rem;
+}
+.ProjectRight h2{
+    margin-bottom: 2rem;
+    color: #000;
+    font-weight: 750;
+    font-size: 2rem;
+}
+.ProjectRight p{
+    color: var(--grey01);
+    line-height: 2rem;
+}
+.ProjectRight button{
+    padding: 15px 2.7rem; 
+    font-size: 0.9rem;
+}
