@@ -32,7 +32,10 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           toast.success("Email muvaffaqiyatli yuborildi!"); // Toast orqali muvaffaqiyat xabari
+<<<<<<< HEAD
           // alert("Email muvaffaqiyatli yuborildi!")
+=======
+>>>>>>> 29dbe9bf01297f57674a7a7f79f3cd8b83660331
           setName(""); // Formani tozalash
           setLastName("");
           setEmail("");
