@@ -9,9 +9,19 @@
             "name": "CSS"
         },
         {
+            "id": 7,
+            "name": "Sass"
+        },
+        {
+            "id": 10,
+            "name": "Responsive Design"
+        },
+        {
             "id": 3,
             "name": "Bootstrap"
         },
+     
+      
         {
             "id": 4,
             "name": "JavaScript"
@@ -21,24 +31,12 @@
             "name": "React"
         },
         {
-            "id": 6,
-            "name": "Node JS"
-        },
-        {
-            "id": 7,
-            "name": "Sass"
-        },
-        {
             "id": 8,
             "name": "Git"
         },
         {
-            "id": 9,
-            "name": "Github"
-        },
-        {
-            "id": 10,
-            "name": "Responsive Design"
+            "id": 6,
+            "name": "Node JS"
         },
         {
             "id": 11,

@@ -5,15 +5,9 @@ import { Link } from "react-scroll";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 const About = () => {
-<<<<<<< HEAD
-  useEffect(() => {
-    AOS.init()
-  }, [])
-=======
   useEffect(()=>{
     AOS.init()
   },[])
->>>>>>> 29dbe9bf01297f57674a7a7f79f3cd8b83660331
   return (
     <section id="about" className="about sec-pad">
       <div className="container">
@@ -42,21 +36,7 @@ const About = () => {
               other people of the Dev Community. Feel free to Connect or Follow
               me on my{" "}
               <span className="shref-bold LinkFordirect">
-<<<<<<< HEAD
-                <a
-                  href="https://t.me/kabirjonov_0"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Telegram</a>
-              </span>{" "}
-              and{" "}
-              <span className="shref-bold LinkFordirect">
-                <a
-                  href="https://instagram.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >Instagram</a>
-=======
+
               <a
               href="https://t.me/kabirjonov_0"
               target="_blank"
@@ -70,7 +50,6 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >Instagram</a>
->>>>>>> 29dbe9bf01297f57674a7a7f79f3cd8b83660331
               </span>{" "}
               where I post useful content related to Web Development and
               Programming{" "}
@@ -81,30 +60,19 @@ const About = () => {
               opportunity that matches my skills and experience then don't
               hesitate to <span className="shref-bold">contact</span> me.{" "}
             </p>
-<<<<<<< HEAD
             <Link spy to='contact'>
               <button className='EveryoneBtn' data-aos="fade-up" data-aos-duration="1000">Contact</button>
             </Link>
-=======
-            <Link  spy to='contact'>
-                <button className='EveryoneBtn' data-aos="fade-up" data-aos-duration="1000">Contact</button>
-                </Link>
->>>>>>> 29dbe9bf01297f57674a7a7f79f3cd8b83660331
 
           </div>
           <div className="col-lg-6 colForleft">
             <h2 className="about__skills-title">my skills</h2>
             <div className="about__div-skills">
-<<<<<<< HEAD
               {data && data.Skills.map(item => (
                 <>
                   
                   <div key={item.id} className="about__skill" data-aos="fade-right" data-aos-duration={item.id}>{item.name}</div>
                 </>
-=======
-              {data && data.Skills.map(item=>(
-                <div key={item.id} className="about__skill" data-aos="fade-right" data-aos-duration={(item.id)+'00'}>{item.name}</div>
->>>>>>> 29dbe9bf01297f57674a7a7f79f3cd8b83660331
               ))}
             </div>
           </div>
